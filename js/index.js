@@ -40,23 +40,45 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
-
+ ctaimg = document.getElementById("cta-img")
+ctaimg.setAttribute('src',siteContent["cta"]["img-src"])
+const midimg = document.getElementById("middle-img")
+midimg.setAttribute('src',siteContent["main-content"]["middle-img-src"])
 const title = document.querySelector("title")
 title.textContent = "GREAT IDEA"
 
 const links = document.querySelector("nav")
 const link1 = document.querySelector("a")
-link1.textContent = "Services"
+link1.textContent = (siteContent["nav"]["nav-item-1"])
 const link2 = link1.nextElementSibling;
-link2.textContent = "Product"
+link2.textContent = (siteContent["nav"]["nav-item-2"])
 const link3 = link2.nextElementSibling;
-link3.textContent = "Vision"
+link3.textContent = (siteContent["nav"]["nav-item-3"])
 const link4 = link3.nextElementSibling;
-link4.textContent= "Features"
+link4.textContent= (siteContent["nav"]["nav-item-4"])
 const link5 = link4.nextElementSibling;
-link5.textContent = "About"
+link5.textContent = (siteContent["nav"]["nav-item-5"])
 const link6 = link5.nextElementSibling;
-link6.textContent = "Contact"
+link6.textContent = (siteContent["nav"]["nav-item-6"])
+const blogLink = document.createElement("a");
+blogLink.textContent = "Blog";
+blogLink.href = "#";
+document.querySelector("nav").appendChild(blogLink);
+const homeLink = document.createElement("a");
+homeLink.textContent = "Home";
+homeLink.href = "#";
+document.querySelector("nav").prepend(homeLink);
+
+
+link1.style.color = "green"
+link2.style.color = "green"
+link3.style.color = "green"
+link4.style.color = "green"
+link5.style.color = "green"
+link6.style.color = "green"
+blogLink.style.color = "green"
+homeLink.style.color = "green"
+
 link1.href ="#"
 link2.href ="#"
 link3.href="#"
@@ -101,4 +123,13 @@ paragr.textContent ='Product content elementum magna eros, ac posuere elvit temp
 const heading5 = document.querySelectorAll("h4")[4]
 heading5.textContent = "Vision"
 const lastparagraph = heading5.nextElementSibling;
-lastparagraph.textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+lastparagraph.textContent ="Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, insto, at imperdiet metusscelerisque quis."
+
+const lastheading = document.querySelectorAll("h4")[5]
+lastheading.textContent= "Contact"
+const paragraph1 = lastheading.nextElementSibling;
+paragraph1.textContent ="134 Way 456 Street Somewhere, Usa"
+const para2 = paragraph1.nextElementSibling;
+para2.textContent = "1 (888) 888-8888"
+const para3 = para2.nextElementSibling;
+para3.textContent = "sales@greatidea.io"
