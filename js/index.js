@@ -85,17 +85,20 @@ link3.href="#"
 link4.href = "#"
 link5.href = "#"
 link6.href = "#"
+homeLink.href= "#"
+blogLink.href = "#"
 
 const heading = document.querySelector("h1")
-heading.textContent= "Dom is Awsome"
+heading.textContent= (siteContent["cta"]["h1"])
+
 const button = heading.nextElementSibling;
-button.textContent = "Get Started"
+button.textContent = (siteContent["cta"]["button"])
 
 const div1 = document.querySelector(".text-content")
 const hd = div1.querySelector("h4");
-hd.textContent = "Features"
+hd.textContent = (siteContent["main-content"]["features-h4"])
 const parag = div1.querySelector("p")
-parag.textContent ="Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eou ornare nisl. Nullam convallis augue justo, at imperdiet metusscelerisque quis"
+parag.textContent = (siteContent["main-content"]["features-content"])
 
 // div1.classList.add("second")
 // const headin  = document.querySelectorAll("h4"[1])
@@ -103,33 +106,31 @@ parag.textContent ="Features content elementum magna eros, ac posuere elvit temp
 const div2 = div1.nextElementSibling;
 const headingTwo = div2.querySelector("h4")
 
-headingTwo.textContent ="About"
+headingTwo.textContent =(siteContent["main-content"]["about-h4"])
 const paragraph = headingTwo.nextElementSibling;
-paragraph.textContent ="About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metusscelerisque quis."
-
+paragraph.textContent = (siteContent["main-content"]["about-content"])
 
 const hdn = document.querySelectorAll("h4")[2]
 
-hdn.textContent = "Services"
+hdn.textContent = (siteContent["main-content"]["services-h4"])
 
 const para = hdn.nextElementSibling;
-para.textContent ="Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-
+para.textContent = (siteContent["main-content"]["services-content"])
 const heading4 = document.querySelectorAll("h4")[3]
-heading4.textContent = "Product"
+heading4.textContent = (siteContent["main-content"]["product-h4"])
 const paragr = heading4.nextElementSibling;
-paragr.textContent ='Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+paragr.textContent = (siteContent["main-content"]["product-content"])
 
 const heading5 = document.querySelectorAll("h4")[4]
-heading5.textContent = "Vision"
+heading5.textContent = (siteContent["main-content"]["vision-h4"])
 const lastparagraph = heading5.nextElementSibling;
-lastparagraph.textContent ="Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, insto, at imperdiet metusscelerisque quis."
+lastparagraph.textContent =(siteContent["main-content"]["vision-content"])
 
 const lastheading = document.querySelectorAll("h4")[5]
-lastheading.textContent= "Contact"
+lastheading.textContent = (siteContent["contact"]["contact-h4"])
 const paragraph1 = lastheading.nextElementSibling;
-paragraph1.textContent ="134 Way 456 Street Somewhere, Usa"
+paragraph1.textContent =(siteContent["contact"]["address"])
 const para2 = paragraph1.nextElementSibling;
-para2.textContent = "1 (888) 888-8888"
+para2.textContent = (siteContent["contact"]["phone"])
 const para3 = para2.nextElementSibling;
-para3.textContent = "sales@greatidea.io"
+para3.textContent = (siteContent["contact"]["email"])
